@@ -1,0 +1,27 @@
+:mod:`classes`
+==============
+
+.. py:module:: classes
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   monster/index.rst
+   player/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   entity/index.rst
+   monster_list/index.rst
+   simulator/index.rst
+
+

@@ -1,0 +1,62 @@
+:mod:`classes.player`
+=====================
+
+.. py:module:: classes.player
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   player_actions/index.rst
+   player_logic/index.rst
+
+
+Package Contents
+----------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.player.Player
+
+
+
+.. py:class:: Player(sim, loadout=None, style=None)
+
+   Bases: :class:`classes.player.player_logic.PlayerLogic`, :class:`classes.player.player_actions.PlayerActions`, :class:`classes.entity.Entity`
+
+   Interface for :class:`classes.Player` and :class:`classes.Monster`.
+
+   :param sim: Simulator utilizing the entity.
+   :type sim: Simulator
+
+   .. attribute:: config
+
+      Dictionary loaded from config file containing default stat values.
+
+      :type: dict
+
+   .. attribute:: hp
+
+      List of ``[current_hp, max_hp, hp_ratio]``.
+
+      :type: list
+
+   .. attribute:: mp
+
+      List of ``[current_mp, max_mp, mp_ratio]``.
+
+      :type: list
+
+   .. attribute:: sp
+
+      List of ``[current_sp, max_sp, sp_ratio]``.
+
+      :type: list
+
+

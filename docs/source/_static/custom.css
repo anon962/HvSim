@@ -1,0 +1,26 @@
+@import url('readable.css');
+
+/* -- page layout --------------------------------------------------------- */
+
+dd.field-odd p, dd.field-even p {
+    text-indent: 35px;
+    line-height: 25px;
+}
+
+dt.field-odd, dt.field-even {
+    margin: 10px 0 0 0;
+}
+
+dl.field-list {
+    display: block;
+    grid-template-columns: auto;
+}
+
+div.body ul {
+    list-style: none;
+    margin: 0 0 0 0;
+}
+
+ul.simple {
+    padding-left: 0 !important;
+}

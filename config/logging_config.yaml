@@ -1,0 +1,29 @@
+version: 1
+
+
+formatters:
+  console:
+    format: "%(message)s"
+
+filters:
+  console:
+    (): classes.log_filters.TagFilter
+    blacklist: [
+    ]
+  tag_debug:
+    (): classes.log_filters.TagDebugger
+    width: 100
+
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: console
+    level: INFO
+    filters: [console, tag_debug]
+    stream: ext://sys.stdout
+
+loggers:
+  classes:
+    level: DEBUG
+    handlers: [console]

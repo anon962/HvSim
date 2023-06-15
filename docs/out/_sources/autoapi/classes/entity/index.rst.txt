@@ -1,0 +1,90 @@
+:mod:`classes.entity`
+=====================
+
+.. py:module:: classes.entity
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.entity.Entity
+
+
+
+.. py:class:: Entity(sim)
+
+   Bases: :class:`abc.ABC`
+
+   Interface for :class:`classes.Player` and :class:`classes.Monster`.
+
+   :param sim: Simulator utilizing the entity.
+   :type sim: Simulator
+
+   .. attribute:: config
+
+      Dictionary loaded from config file containing default stat values.
+
+      :type: dict
+
+   .. attribute:: hp
+
+      List of ``[current_hp, max_hp, hp_ratio]``.
+
+      :type: list
+
+   .. attribute:: mp
+
+      List of ``[current_mp, max_mp, mp_ratio]``.
+
+      :type: list
+
+   .. attribute:: sp
+
+      List of ``[current_sp, max_sp, sp_ratio]``.
+
+      :type: list
+
+   .. method:: reset(self) -> None
+
+      Reinitializes stats using config file.
+
+
+   .. method:: alive(self) -> bool
+
+      Checks if remaining HP is greater than zero.
+
+
+   .. method:: use(self, action_name, target)
+
+      Performs an action.
+
+      :param target: Target entity.
+      :type target: Entity
+      :param action_name: Name of action.
+      :type action_name: str
+
+      :returns: Thingy
+      :rtype: None
+
+
+   .. method:: do_action(self) -> dict
+      :abstractmethod:
+
+      Select and perform an action. Implementations should increment :attr:`Entity.next_action_time`.
+
+      :return: :class:`dict` containing action taken and action time. For example::
+
+              { action: "attack", action_time: 1.0 }
+
+
+   .. method:: __lt__(self, other)
+
+      Return self<value.
+
+
+

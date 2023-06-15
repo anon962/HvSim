@@ -1,0 +1,24 @@
+:mod:`classes.player.player_actions`
+====================================
+
+.. py:module:: classes.player.player_actions
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.player.player_actions.PlayerActions
+
+
+
+.. py:class:: PlayerActions
+
+   .. method:: attack(self, monster)
+
+
+

@@ -1,0 +1,75 @@
+:mod:`classes.monster`
+======================
+
+.. py:module:: classes.monster
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   actions/index.rst
+   logic/index.rst
+
+
+Package Contents
+----------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.monster.Monster
+
+
+
+.. py:class:: Monster(sim, name)
+
+   Bases: :class:`classes.monster.logic.MonsterLogic`, :class:`classes.monster.actions.MonsterActions`, :class:`classes.entity.Entity`
+
+   Interface for :class:`classes.Player` and :class:`classes.Monster`.
+
+   :param sim: Simulator utilizing the entity.
+   :type sim: Simulator
+
+   .. attribute:: config
+
+      Dictionary loaded from config file containing default stat values.
+
+      :type: dict
+
+   .. attribute:: hp
+
+      List of ``[current_hp, max_hp, hp_ratio]``.
+
+      :type: list
+
+   .. attribute:: mp
+
+      List of ``[current_mp, max_mp, mp_ratio]``.
+
+      :type: list
+
+   .. attribute:: sp
+
+      List of ``[current_sp, max_sp, sp_ratio]``.
+
+      :type: list
+
+   .. method:: use(self, action_name, target=None)
+
+      Performs an action.
+
+      :param target: Target entity.
+      :type target: Entity
+      :param action_name: Name of action.
+      :type action_name: str
+
+      :returns: Thingy
+      :rtype: None
+
+
+

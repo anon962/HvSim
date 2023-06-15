@@ -1,0 +1,24 @@
+:mod:`classes.monster.logic`
+============================
+
+.. py:module:: classes.monster.logic
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.monster.logic.MonsterLogic
+
+
+
+.. py:class:: MonsterLogic
+
+   .. method:: do_action(self)
+
+
+

@@ -1,0 +1,29 @@
+:mod:`utils.globals`
+====================
+
+.. py:module:: utils.globals
+
+
+Module Contents
+---------------
+
+.. data:: ROOT_DIR
+   
+
+   
+
+.. data:: CONFIG_DIR
+   
+
+   
+
+.. data:: PLAYER_CONFIG
+   
+
+   
+
+.. data:: MOB_CONFIG
+   
+
+   
+

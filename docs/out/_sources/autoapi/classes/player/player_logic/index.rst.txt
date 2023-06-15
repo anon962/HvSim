@@ -1,0 +1,24 @@
+:mod:`classes.player.player_logic`
+==================================
+
+.. py:module:: classes.player.player_logic
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.player.player_logic.PlayerLogic
+
+
+
+.. py:class:: PlayerLogic
+
+   .. method:: do_action(self: Player)
+
+
+

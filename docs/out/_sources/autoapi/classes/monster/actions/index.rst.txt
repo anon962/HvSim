@@ -1,0 +1,30 @@
+:mod:`classes.monster.actions`
+==============================
+
+.. py:module:: classes.monster.actions
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.monster.actions.MonsterActions
+
+
+
+.. py:class:: MonsterActions
+
+   .. method:: attack(self: classes.Player)
+
+
+   .. method:: skill_1(self)
+
+
+   .. method:: skill_2(self)
+
+
+

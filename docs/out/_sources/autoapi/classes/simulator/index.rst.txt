@@ -1,0 +1,27 @@
+:mod:`classes.simulator`
+========================
+
+.. py:module:: classes.simulator
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.simulator.Simulator
+
+
+
+.. py:class:: Simulator(loadout=None, style=None)
+
+   .. method:: test(self)
+
+
+   .. method:: play_round(self, n)
+
+
+

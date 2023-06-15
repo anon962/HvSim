@@ -1,0 +1,16 @@
+:mod:`utils`
+============
+
+.. py:module:: utils
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   globals/index.rst
+   misc_utils/index.rst
+
+

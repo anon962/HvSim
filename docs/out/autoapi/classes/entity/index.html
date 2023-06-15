@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classes.entity &#8212; HvSim  documentation</title>
+    <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="classes.monster_list" href="../monster_list/index.html" />
+    <link rel="prev" title="classes.player.player_logic" href="../player/player_logic/index.html" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head><body>
+  
+  
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../monster_list/index.html" title="classes.monster_list"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../player/player_logic/index.html" title="classes.player.player_logic"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">HvSim  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" accesskey="U"><code class="xref py py-mod docutils literal notranslate"><span class="pre">classes</span></code></a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">classes.entity</span></code></a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-classes.entity">
+<span id="classes-entity"></span><h1><a class="reference internal" href="#module-classes.entity" title="classes.entity"><code class="xref py py-mod docutils literal notranslate"><span class="pre">classes.entity</span></code></a><a class="headerlink" href="#module-classes.entity" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#classes.entity.Entity" title="classes.entity.Entity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Entity</span></code></a></p></td>
+<td><p>Interface for <code class="xref py py-class docutils literal notranslate"><span class="pre">classes.Player</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">classes.Monster</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt id="classes.entity.Entity">
+<em class="property">class </em><code class="sig-prename descclassname">classes.entity.</code><code class="sig-name descname">Entity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#classes.entity.Entity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
+<p>Interface for <code class="xref py py-class docutils literal notranslate"><span class="pre">classes.Player</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">classes.Monster</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sim</strong> (<a class="reference internal" href="../simulator/index.html#classes.simulator.Simulator" title="classes.simulator.Simulator"><em>Simulator</em></a>) – Simulator utilizing the entity.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="classes.entity.Entity.config">
+<code class="sig-name descname">config</code><a class="headerlink" href="#classes.entity.Entity.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary loaded from config file containing default stat values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="classes.entity.Entity.hp">
+<code class="sig-name descname">hp</code><a class="headerlink" href="#classes.entity.Entity.hp" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of <code class="docutils literal notranslate"><span class="pre">[current_hp,</span> <span class="pre">max_hp,</span> <span class="pre">hp_ratio]</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="classes.entity.Entity.mp">
+<code class="sig-name descname">mp</code><a class="headerlink" href="#classes.entity.Entity.mp" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of <code class="docutils literal notranslate"><span class="pre">[current_mp,</span> <span class="pre">max_mp,</span> <span class="pre">mp_ratio]</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="classes.entity.Entity.sp">
+<code class="sig-name descname">sp</code><a class="headerlink" href="#classes.entity.Entity.sp" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of <code class="docutils literal notranslate"><span class="pre">[current_sp,</span> <span class="pre">max_sp,</span> <span class="pre">sp_ratio]</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="classes.entity.Entity.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)">None</a><a class="headerlink" href="#classes.entity.Entity.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reinitializes stats using config file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="classes.entity.Entity.alive">
+<code class="sig-name descname">alive</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)">bool</a><a class="headerlink" href="#classes.entity.Entity.alive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if remaining HP is greater than zero.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="classes.entity.Entity.use">
+<code class="sig-name descname">use</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">action_name</span></em>, <em class="sig-param"><span class="n">target</span></em><span class="sig-paren">)</span><a class="headerlink" href="#classes.entity.Entity.use" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs an action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target</strong> (<a class="reference internal" href="#classes.entity.Entity" title="classes.entity.Entity"><em>Entity</em></a>) – Target entity.</p></li>
+<li><p><strong>action_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – Name of action.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Thingy</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="classes.entity.Entity.do_action">
+<em class="property">abstract </em><code class="sig-name descname">do_action</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a><a class="headerlink" href="#classes.entity.Entity.do_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select and perform an action. Implementations should increment <code class="xref py py-attr docutils literal notranslate"><span class="pre">Entity.next_action_time</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a> containing action taken and action time. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="n">action</span><span class="p">:</span> <span class="s2">&quot;attack&quot;</span><span class="p">,</span> <span class="n">action_time</span><span class="p">:</span> <span class="mf">1.0</span> <span class="p">}</span>
+</pre></div>
+</div>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="classes.entity.Entity.__lt__">
+<code class="sig-name descname">__lt__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">other</span></em><span class="sig-paren">)</span><a class="headerlink" href="#classes.entity.Entity.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self&lt;value.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">classes.entity</span></code></a><ul>
+<li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
+<li><a class="reference internal" href="#classes">Classes</a><ul>
+<li><a class="reference internal" href="#classes.entity.Entity">Entity</a><ul>
+<li><a class="reference internal" href="#classes.entity.Entity.config">config</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.hp">hp</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.mp">mp</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.sp">sp</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.reset">reset</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.alive">alive</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.use">use</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.do_action">do_action</a></li>
+<li><a class="reference internal" href="#classes.entity.Entity.__lt__">__lt__</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation index</a><ul>
+  <li><a href="../../index.html">API Reference</a><ul>
+  <li><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">classes</span></code></a><ul>
+      <li>Previous: <a href="../player/player_logic/index.html" title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">classes.player.player_logic</span></code></a></li>
+      <li>Next: <a href="../monster_list/index.html" title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">classes.monster_list</span></code></a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/autoapi/classes/entity/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  <div class="footer">
+    &copy; Copyright 2020, Genie.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.
+  </div>
+  
+  </body>
+</html>

@@ -1,0 +1,24 @@
+:mod:`classes.monster_list`
+===========================
+
+.. py:module:: classes.monster_list
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   classes.monster_list.MonsterList
+
+
+
+.. py:class:: MonsterList(sim, n)
+
+   .. method:: __iter__(self)
+
+
+
